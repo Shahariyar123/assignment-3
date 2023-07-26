@@ -11,99 +11,123 @@
 </head>
 
 <body>
-  <!-- <header>
-    <div class="navbar bg-[#F85559] max-w-screen-xl mx-auto rounded-full lg:p-6 text-white">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Item 1</a></li>
-            <li>
-              <a>Parent</a>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
+  <header>
+  <nav class=" md:bg-red-500 max-w-7xl mx-auto p-5 md:rounded-full md:mt-10 mb-10 md:text-white ">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Left-side menu items (hidden on mobile) -->
+      <div class="hidden md:flex space-x-4">
+        <!-- Add your menu items here -->
+        <a href="#" class="">Home</a>
+        <a href="#" class="">About</a>
+        <a href="#" class="">Services</a>
+      </div>
+
+      <!-- Centered logo -->
+      <a href="#" class="flex items-center  font-bold text-xl">
+        <img src="images/logo.png" alt="Your Logo" class="h-8 w-8 mr-2"> <!-- Adjust height and width as needed -->
+        Fruit Burst
+      </a>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button id="mobileMenuBtn" class=" focus:outline-none">
+          <!-- Hamburger icon here -->
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path class="hidden" id="closeIcon"
+              d="M6.292 6.292a1 1 0 011.414 0L12 10.586l4.293-4.294a1 1 0 111.414 1.414L13.414 12l4.293 4.293a1 1 0 01-1.414 1.414L12 13.414l-4.293 4.293a1 1 0 01-1.414-1.414L10.586 12 6.293 7.707a1 1 0 010-1.415z" />
+            <path class="block" id="openIcon"
+              d="M4 6h16a1 1 0 110 2H4a1 1 0 110-2zm0 5h16a1 1 0 110 2H4a1 1 0 110-2zm0 5h16a1 1 0 110 2H4a1 1 0 110-2z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Right-side search bar (hidden on mobile) -->
+      <div class="hidden bg-white px-4 rounded-full  md:flex items-center">
+        <input type="text" placeholder="Search" class="px-4 py-2 rounded-full  text-gray-800 focus:outline-none">
+        <button class="text-slate-900">Q</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner section -->
+  <section class="max-w-7xl mx-auto px-5 md:px-0 ">
+    <div class="carousel w-full rounded-md ">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="image-container">
+          <img src="images/banner1.png" class="w-full" />
+          <div class="dark-overlay"></div>
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+            <h1 class="text-xl md:text-6xl text-white font-bold">Exotic tastes at your doorstep</h1>
+            <p class="text-white text-xs md:text-base my-2 md:my-6">We supply highly quality organic products</p>
+            <a href="#" class="py-1 px-3 md:p-3 text-white rounded-md bg-red-500 ">Shop Now</a>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li tabindex="0">
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="text-white bg-[#00000065] p-3 rounded-full">❮</a>
+          <a href="#slide2" class="text-white bg-[#00000065] p-3 rounded-full">❯</a>
         </div>
       </div>
-      <div class="lg:w-[30%] mx-auto ">
-        <img src="./images/logo.png" alt="">
-        <h1 class="text-xl lg:text-3xl">Fruit Burst</h1>
+
+
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="images/banner2.png" class="w-full" />
+        <div class="dark-overlay"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+          <h1 class="text-xl md:text-6xl text-white font-bold">Exotic tastes at your doorstep</h1>
+          <p class="text-white text-xs md:text-base my-2 md:my-6">We supply highly quality organic products</p>
+          <a href="#" class="py-1 px-3 md:p-3 text-white rounded-md bg-red-500 ">Shop Now</a>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="text-white bg-[#00000065] p-3 rounded-full">❮</a>
+          <a href="#slide3" class="text-white bg-[#00000065] p-3 rounded-full">❯</a>
+        </div>
       </div>
-      <div class="navbar-end hidden lg:block">
-        <div class="form-control ">
-          <input type="text" placeholder="Search" class="input input-bordered w-16 md:w-auto rounded-full" />
-          <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="images/banner3.png" class="w-full" />
+        <div class="dark-overlay"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+          <h1 class="text-xl md:text-6xl text-white font-bold">Exotic tastes at your doorstep</h1>
+          <p class="text-white text-xs md:text-base my-2 md:my-6">We supply highly quality organic products</p>
+          <a href="#" class="py-1 px-3 md:p-3 text-white rounded-md bg-red-500 ">Shop Now</a>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="text-white bg-[#00000065] p-3 rounded-full">❮</a>
+          <a href="#slide4" class="text-white bg-[#00000065] p-3 rounded-full">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="images/banner4.png" class="w-full" />
+        <div class="dark-overlay"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+          <h1 class="text-xl md:text-6xl text-white font-bold">Exotic tastes at your doorstep</h1>
+          <p class="text-white text-xs md:text-base my-2 md:my-6">We supply highly quality organic products</p>
+          <a href="#" class="py-1 px-3 md:py-3 text-white rounded-md bg-red-500 ">Shop Now</a>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="text-white bg-[#00000065] p-3 rounded-full">❮</a>
+          <a href="#slide1" class="text-white bg-[#00000065] p-3 rounded-full">❯</a>
         </div>
       </div>
     </div>
-    <section>
-      <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" class="carousel-item relative w-full">
-          <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </header> -->
+  </section>
+  
+
+</header>
+
   <main>
+
+    
     <!-- timer start -->
-    <!-- <section class=" max-w-screen-xl m-auto justify-between my-32">
-      <div class="lg:flex justify-between">
+
+    <section class=" max-w-screen-xl m-auto my-32">
+      <div class="lg:flex justify-between w-[100%] mx-auto lg:text-left text-center">
         <div>
-          <h3 class="font-extrabold lg:text-5xl pb-2">Deal of the day</h3>
-          <p class="w-[70%] text-sm p-2">Contrary to popular belief, is not simply random text. It has roots in a piece
+          <h3 class="  text-center font-extrabold text-3xl lg:text-5xl pb-2 lg:text-left ">Deal of the day</h3>
+          <p class=" text-sm p-2 text-center lg:text-left lg:w-[70%]">Contrary to popular belief, is not simply random text. It has roots in a piece
             of
             classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+        <div class="grid grid-flow-col gap-5 justify-center text-center auto-cols-max md:ml-26">
           <div class="flex flex-col">
             <span class="countdown font-mono text-5xl">
               <span style="--value:15;"></span>
@@ -131,7 +155,20 @@
         </div>
       </div>
 
-    </section> -->
+    </section>
+
+
+    <section>
+      <!-- Why Choose Us -->
+
+    </section>
+
+
+
+
+
+
+
     <section class="max-w-screen-xl m-auto justify-around gap-5 grid grid-row-1 md:grid-cols-2 lg:grid-cols-4 mt-12">
       <!-- card -->
       <div class="card bg-base-100 shadow-xl">
